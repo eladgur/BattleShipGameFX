@@ -1,0 +1,12 @@
+.root {
+    -fx-background-image: url(/resources/images/background.jpg);
+    -fx-background-size: cover;
+}
+
+.button {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill:black;
+}
+
+.buttonDisable{}

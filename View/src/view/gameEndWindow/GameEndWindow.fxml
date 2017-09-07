@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.gameEndWindow.GameEndWindowController">
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" stylesheets="@../../resources/style/GameWindowStyle.css" BorderPane.alignment="CENTER">
+         <content>
+            <GridPane fx:id="layoutGridPane">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints vgrow="NEVER" />
+                <RowConstraints vgrow="SOMETIMES" />
+                <RowConstraints vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Options">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Start New Game" />
+                  <MenuItem mnemonicParsing="false" text="Restart Game" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <ButtonBar buttonMinWidth="100.0" prefHeight="40.0" BorderPane.alignment="CENTER">
+        <buttons>
+            <Label text="Attack Result:" />
+            <Label layoutX="30.0" layoutY="22.0" text="Result Label" />
+          <Button id="previusMoveButton" mnemonicParsing="false" text="Previous Move" />
+            <Button id="nextMoveButton" layoutX="135.0" layoutY="18.0" mnemonicParsing="false" text="Next Move" />
+        </buttons>
+         <padding>
+            <Insets right="5.0" />
+         </padding>
+      </ButtonBar>
+   </bottom>
+</BorderPane>

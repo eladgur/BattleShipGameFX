@@ -1,0 +1,74 @@
+
+/*General Components*/
+.BoardGridPane {-fx-column-halignment: center;}
+
+.button {
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+}
+
+.headerNumbersLabels {-fx-background-color: cadetblue;}
+
+/*Track Board*/
+.trackBoardGridPaneButton:hover {
+    -fx-background-color: green;
+    -fx-opacity: 30%;
+}
+
+.chosenTrackButton{
+    -fx-background-color: red;
+    -fx-opacity: 30%;
+}
+
+.shipHitTrackButton{
+    -fx-background-image: url("/resources/images/hit.png");
+    -fx-background-color: transparent;
+    -fx-opacity: 1;
+}
+
+.shipDrownTrackButton{
+    -fx-background-image: url("/resources/images/sinking-ship.png");
+    -fx-opacity: 1;
+}
+
+.mineExplosionTrackButton{
+    -fx-background-image: url("/resources/images/mine-explosion.png");
+    -fx-opacity: 100%;
+    -fx-background-size: stretch;
+}
+
+/*Ship Board*/
+.shipBoardButton{}
+
+.shipBoardShipButton {
+    -fx-background-image: url("/resources/images/battleship.png");
+    -fx-background-color: transparent;
+}
+
+.shipBoardMineButton {-fx-background-image: url("/resources/images/mine.png");}
+
+#shipBoardGridPane,#trackBoardGridPane{-fx-background-color: deepskyblue;}
+
+.shipDrownShipButton{
+    -fx-background-image: url("/resources/images/sinking-ship.png");
+    -fx-opacity: 1;
+}
+
+.shipHitShipButton{-fx-background-image: url("/resources/images/burningShip.png");}
+
+.shipButtonDragEntered{
+    -fx-background-color: darkmagenta;
+    -fx-opacity:30%;
+}
+
+.shipBoardHittedMineButton{
+    -fx-background-image: url("/resources/images/burningMine.png");
+    -fx-background-size: stretch;
+}
+
+.mineButton{-fx-background-image: url("/resources/images/mine.png");}
+
+#retreatButton{-fx-background-color: orangered;}
+
+#retreatButton:hover{-fx-background-color: lawngreen;}
