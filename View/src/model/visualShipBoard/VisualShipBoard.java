@@ -4,6 +4,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.ObservableList;
 import javafx.scene.control.Button;
+import logic.MoveData;
 import logic.data.Ship;
 import logic.data.ShipBoard;
 import logic.data.enums.AttackResult;
@@ -131,5 +132,9 @@ public class VisualShipBoard {
 
     public void putMine(int row, int column) {
         this.board[row][column].set(StyleClasses.mineButton.name());
+    }
+
+    public void updateOnReplay(MoveData moveData) {
+
     }
 }

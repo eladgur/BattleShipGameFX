@@ -25,11 +25,12 @@ public class GameEngine implements ShipDrownListenable {
     private GameInfoValidator gameInfoValidator;
     public List<ShipDrownListener> shipDrownListeners;
     private int turnsCounter;
+    private List<MoveData> moveHistoryList;
 
     public GameEngine() {
-        activePlayer = FIRSTPLAYER;
-        otherPlayer = SECONDSPLAYER;
-        gameStatus = GameStatus.WAITING_FOR_ATTACK_POSITION;
+        this.activePlayer = FIRSTPLAYER;
+        this.otherPlayer = SECONDSPLAYER;
+        this.gameStatus = GameStatus.WAITING_FOR_ATTACK_POSITION;
     }
 
     private LocalTime startTime;
@@ -57,7 +58,8 @@ public class GameEngine implements ShipDrownListenable {
         this.gameType = GameType.valueOf(gameTypeName);
     }
 
-    public AttackResult attackPosition(Position positionToAttack, boolean mineIsTheAttacker) throws NoShipAtPoisitionException {
+    public AttackResult attackPosition(Position positionToAttack, boolean mineIsTheAttacker) throws NoShipAtPoisitionException, CloneNotSupportedException {
+        int playerIndex = this.activePlayer;
         ShipBoardSquareValue squareValue;
         AttackResult attackResult;
 
@@ -85,7 +87,22 @@ public class GameEngine implements ShipDrownListenable {
             attackResult = REPEATEDHIT;
         }
 
+        storeAttackResult(attackResult, playerIndex, positionToAttack);
+
         return attackResult;
+    }
+
+    private void storeAttackResult(AttackResult attackResult, int playerIndex, Position position) throws CloneNotSupportedException {
+        TrackBoardSquareValue attackerTrackBoardSquareValue = playersdata[activePlayer].getTrackBoardSquareValue(position);
+        TrackBoardSquareValue attackedTrackBoardSquareValue = playersdata[otherPlayer].getTrackBoardSquareValue(position);
+
+        MoveData moveDataAfterAttack = new MoveData(attackResult, false, playersdata);
+
+        if (this.moveHistoryList == null) {
+            this.moveHistoryList = new LinkedList<>();
+        }
+
+        this.moveHistoryList.add(moveDataAfterAttack);
     }
 
     private void swapActivePlayer() {
@@ -301,5 +318,9 @@ public class GameEngine implements ShipDrownListenable {
         }
 
         return isValidLocation;
+    }
+
+    public List<MoveData> getMoveHistory() {
+        return this.moveHistoryList;
     }
 }
