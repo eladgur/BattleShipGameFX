@@ -158,7 +158,7 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
             fxmlLoader.setLocation(getClass().getResource("/view/gameEndWindow/GameEndWindow.fxml"));
             Parent root = fxmlLoader.load();
             windowController = fxmlLoader.getController();
-            windowController.set(gameWindowControllers[0], gameWindowControllers[1],gameEngine.getMoveHistory());
+            windowController.set(gameWindowControllers[0], gameWindowControllers[1], gameEngine.getMoveHistory());
             scene = new Scene(root);
             switchToScene(scene, "Game End Stats");
         } catch (IOException e) {

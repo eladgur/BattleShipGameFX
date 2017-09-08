@@ -12,7 +12,8 @@ public enum AttackResult {
     MINEDROWNSHIP,
     MINEWATER,
     MINEMINE,
-    MINEREAPETEDHIT;
+    MINEREAPETEDHIT,
+    INSERTMINE;
 
     private Ship drownShip;
 

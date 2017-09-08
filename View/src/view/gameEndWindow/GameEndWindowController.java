@@ -40,6 +40,10 @@ public class GameEndWindowController {
         //Bind Previous and next button to Iterator
         this.nextMoveButton.disableProperty().bind(moveIterator.getHasNextProperty().not());
         this.previousMoveButton.disableProperty().bind(moveIterator.getHasPreviousProperty().not());
+        //Load First Move Data For Replays
+        if (movesHistoryList != null && movesHistoryList.size() >= 1) {
+            onPreviusMoveButtonClicked(new ActionEvent());
+        }
     }
 
     public void onNextMoveButtonClicked(ActionEvent actionEvent) {
@@ -94,6 +98,9 @@ public class GameEndWindowController {
                 break;
             case MINEREAPETEDHIT:
                 text = "";
+                break;
+            case INSERTMINE:
+                text = "Insert Mine";
                 break;
             default:
                 text = "";

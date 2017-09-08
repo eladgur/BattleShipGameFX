@@ -9,6 +9,7 @@ import java.util.ListIterator;
 
 public class MyIterator<T>{
     private final ListIterator<T> listIterator;
+    private T lastItem;
     private boolean nextWasCalled = false;
     private boolean previousWasCalled = false;
     private BooleanProperty hasNext;
@@ -30,9 +31,11 @@ public class MyIterator<T>{
 
     public boolean hasNext() {
         boolean hasNext = listIterator.hasNext();
-        if (previousWasCalled) {
-            listIterator.next();
-            hasNext = listIterator.hasNext();
+        if (hasNext) {
+            T next = listIterator.next();
+            if (next == lastItem) {
+                hasNext = listIterator.hasNext();
+            }
             listIterator.previous();
         }
 
@@ -41,9 +44,11 @@ public class MyIterator<T>{
 
     public boolean hasPrevious() {
         boolean hasPrev = listIterator.hasPrevious();
-        if (nextWasCalled) {
-            listIterator.previous();
-            hasPrev = listIterator.hasPrevious();
+        if (hasPrev) {
+            T previous = listIterator.previous();
+            if (previous == lastItem) {
+                hasPrev = listIterator.hasPrevious();
+            }
             listIterator.next();
         }
 
@@ -57,6 +62,7 @@ public class MyIterator<T>{
             listIterator.next();
         }
         T result = listIterator.next();
+        this.lastItem = result;
         hasNext.set(hasNext());
         hasPrevious.set(hasPrevious());
 
@@ -69,6 +75,7 @@ public class MyIterator<T>{
             nextWasCalled = false;
         }
         T result = listIterator.previous();
+        this.lastItem = result;
         hasPrevious.set(hasPrevious());
         hasNext.set(hasNext());
         previousWasCalled = true;
