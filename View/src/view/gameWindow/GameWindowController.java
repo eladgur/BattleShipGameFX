@@ -344,11 +344,20 @@ public class GameWindowController implements OnMinePutObserverable, OnPlayerRetr
         }
     }
 
-    public void updateVisualBoardsOnReplay(PlayerData playerData) {
+    public void updateVisualComponantsOnReplay(PlayerData playerData) {
         TrackBoard trackBoard = playerData.getTrackBoard();
         ShipBoard shipBoard = playerData.getShipBoard();
-
+        //Mark The player who did the move
+//        markPlayerOnReplay(playerData.getPlayerName());
+        //Update Boards
         visualTrackBoard.updateOnReplay(trackBoard);
         visualShipBoard.updateOnReplay(shipBoard);
+        //Update Stats
+        this.updatePlayerStats(playerData);
     }
+
+//    private void markPlayerOnReplay(String playerName) {
+//        if (playerName ==) {
+//        }
+//    }
 }

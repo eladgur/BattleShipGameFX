@@ -5,47 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="From Intelijidea">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FxUI/controller/GameController.class" afterPath="$PROJECT_DIR$/out/production/FxUI/controller/GameController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FxUI/model/visualShipBoard/VisualShipBoard$1.class" afterPath="$PROJECT_DIR$/out/production/FxUI/model/visualShipBoard/VisualShipBoard$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FxUI/model/visualShipBoard/VisualShipBoard.class" afterPath="$PROJECT_DIR$/out/production/FxUI/model/visualShipBoard/VisualShipBoard.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FxUI/model/visualTrackBoard/VisualTrackBoard$1.class" afterPath="$PROJECT_DIR$/out/production/FxUI/model/visualTrackBoard/VisualTrackBoard$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FxUI/model/visualTrackBoard/VisualTrackBoard.class" afterPath="$PROJECT_DIR$/out/production/FxUI/model/visualTrackBoard/VisualTrackBoard.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FxUI/utills/MyIterator.class" afterPath="$PROJECT_DIR$/out/production/FxUI/utills/MyIterator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FxUI/utills/Utills.class" afterPath="$PROJECT_DIR$/out/production/FxUI/utills/Utills.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FxUI/view/GameWindow/GameWindowController.class" afterPath="$PROJECT_DIR$/out/production/FxUI/view/GameWindow/GameWindowController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FxUI/view/gameEndWindow/GameEndWindowController.class" afterPath="$PROJECT_DIR$/out/production/FxUI/view/gameEndWindow/GameEndWindowController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Logic/logic/GameEngine$1.class" afterPath="$PROJECT_DIR$/out/production/Logic/logic/GameEngine$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Logic/logic/GameEngine.class" afterPath="$PROJECT_DIR$/out/production/Logic/logic/GameEngine.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Logic/logic/data/PlayerData.class" afterPath="$PROJECT_DIR$/out/production/Logic/logic/data/PlayerData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Logic/logic/data/ShipBoard.class" afterPath="$PROJECT_DIR$/out/production/Logic/logic/data/ShipBoard.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Logic/logic/data/ShipsBoardSquare.class" afterPath="$PROJECT_DIR$/out/production/Logic/logic/data/ShipsBoardSquare.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Logic/logic/data/TrackBoard.class" afterPath="$PROJECT_DIR$/out/production/Logic/logic/data/TrackBoard.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logic/Logic.iml" afterPath="$PROJECT_DIR$/Logic/Logic.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logic/src/logic/GameEngine.java" afterPath="$PROJECT_DIR$/Logic/src/logic/GameEngine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logic/src/logic/data/PlayerData.java" afterPath="$PROJECT_DIR$/Logic/src/logic/data/PlayerData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logic/src/logic/data/ShipBoard.java" afterPath="$PROJECT_DIR$/Logic/src/logic/data/ShipBoard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logic/src/logic/data/ShipsBoardSquare.java" afterPath="$PROJECT_DIR$/Logic/src/logic/data/ShipsBoardSquare.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Logic/src/logic/data/TrackBoard.java" afterPath="$PROJECT_DIR$/Logic/src/logic/data/TrackBoard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/FxUI.iml" afterPath="$PROJECT_DIR$/View/FxUI.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/src/controller/GameController.java" afterPath="$PROJECT_DIR$/View/src/controller/GameController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/src/model/visualShipBoard/VisualShipBoard.java" afterPath="$PROJECT_DIR$/View/src/model/visualShipBoard/VisualShipBoard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/src/model/visualTrackBoard/VisualTrackBoard.java" afterPath="$PROJECT_DIR$/View/src/model/visualTrackBoard/VisualTrackBoard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/src/utills/MyIterator.java" afterPath="$PROJECT_DIR$/View/src/utills/MyIterator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/src/utills/Utills.java" afterPath="$PROJECT_DIR$/View/src/utills/Utills.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/src/view/gameEndWindow/GameEndWindow.fxml" afterPath="$PROJECT_DIR$/View/src/view/gameEndWindow/GameEndWindow.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/src/view/gameEndWindow/GameEndWindowController.java" afterPath="$PROJECT_DIR$/View/src/view/gameEndWindow/GameEndWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/src/view/gameWindow/GameWindow.fxml" afterPath="$PROJECT_DIR$/View/src/view/gameWindow/GameWindow.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/src/view/gameWindow/GameWindow2.fxml" afterPath="$PROJECT_DIR$/View/src/view/gameWindow/GameWindow2.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/src/view/gameWindow/GameWindowController.java" afterPath="$PROJECT_DIR$/View/src/view/gameWindow/GameWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/src/view/mainMenu/MainMenu.fxml" afterPath="$PROJECT_DIR$/View/src/view/mainMenu/MainMenu.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/XmlInput/XmlInput.iml" afterPath="$PROJECT_DIR$/XmlInput/XmlInput.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FxUI/view/GameWindow/GameWindow.fxml" afterPath="$PROJECT_DIR$/out/production/FxUI/view/GameWindow/GameWindow.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FxUI/view/GameWindow/GameWindow2.fxml" afterPath="$PROJECT_DIR$/out/production/FxUI/view/GameWindow/GameWindow2.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FxUI/view/MainMenu/MainMenu.fxml" afterPath="$PROJECT_DIR$/out/production/FxUI/view/MainMenu/MainMenu.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FxUI/view/gameEndWindow/GameEndWindow.fxml" afterPath="$PROJECT_DIR$/out/production/FxUI/view/gameEndWindow/GameEndWindow.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -102,165 +65,83 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="GameWindowController.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/View/src/view/gameWindow/GameWindowController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="5202">
-                  <caret line="349" column="0" lean-forward="false" selection-start-line="349" selection-start-column="0" selection-end-line="349" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="VisualTrackBoard.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/View/src/model/visualTrackBoard/VisualTrackBoard.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1819">
-                  <caret line="127" column="76" lean-forward="false" selection-start-line="127" selection-start-column="76" selection-end-line="127" selection-end-column="76" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="GameEndWindowController.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/View/src/view/gameEndWindow/GameEndWindowController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
-                  <caret line="60" column="79" lean-forward="false" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="79" />
-                  <folding>
-                    <element signature="method#set#0;class#GameEndWindowController#0" expanded="false" />
-                    <element signature="method#onNextMoveButtonClicked#0;class#GameEndWindowController#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Utills.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/View/src/utills/Utills.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="68" column="31" lean-forward="false" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
-                  <folding>
-                    <element signature="method#setControlBackground#0;class#Utills#0" expanded="false" />
-                    <element signature="method#bindChildSizeToParent#0;class#Utills#0" expanded="false" />
-                    <element signature="method#generateSceneFromFxml#0;class#Utills#0" expanded="false" />
-                    <element signature="method#convertVisualPositionToLogicPosition#0;class#Utills#0" expanded="false" />
-                    <element signature="method#getNodePositionInGridPane#0;class#Utills#0" expanded="false" />
-                    <element signature="method#convertVisualPositionToLogicPosition#1;class#Utills#0" expanded="false" />
-                    <element signature="e#2451#2452#0" expanded="true" />
-                    <element signature="e#2523#2524#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="VisualShipBoard.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/View/src/model/visualShipBoard/VisualShipBoard.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="314">
-                  <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-                  <folding>
-                    <element signature="method#VisualShipBoard#0;class#VisualShipBoard#0" expanded="false" />
-                    <element signature="docComment;method#bindButtonToVisualShipBoardSqaure#0;class#VisualShipBoard#0" expanded="false" />
-                    <element signature="method#bindButtonToVisualShipBoardSqaure#0;class#VisualShipBoard#0" expanded="false" />
-                    <element signature="e#1269#1525#0" expanded="false" />
-                    <element signature="method#updateBoardSqaureValue#0;class#VisualShipBoard#0" expanded="false" />
-                    <element signature="method#markMineAsExploded#0;class#VisualShipBoard#0" expanded="false" />
-                    <element signature="method#markDrownShip#0;class#VisualShipBoard#0" expanded="false" />
-                    <element signature="method#setShipButtonOnShipDrownInRow#0;class#VisualShipBoard#0" expanded="false" />
-                    <element signature="method#setShipButtonOnShipDrownInColumn#0;class#VisualShipBoard#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="VisualShipBoard.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/View/src/model/visualShipBoard/VisualShipBoard.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="385">
-                  <caret line="136" column="52" lean-forward="false" selection-start-line="136" selection-start-column="52" selection-end-line="136" selection-end-column="52" />
-                  <folding>
-                    <element signature="method#VisualShipBoard#0;class#VisualShipBoard#0" expanded="false" />
-                    <element signature="docComment;method#bindButtonToVisualShipBoardSqaure#0;class#VisualShipBoard#0" expanded="false" />
-                    <element signature="method#bindButtonToVisualShipBoardSqaure#0;class#VisualShipBoard#0" expanded="false" />
-                    <element signature="e#1269#1525#0" expanded="false" />
-                    <element signature="method#updateBoardSqaureValue#0;class#VisualShipBoard#0" expanded="false" />
-                    <element signature="method#markMineAsExploded#0;class#VisualShipBoard#0" expanded="false" />
-                    <element signature="method#markDrownShip#0;class#VisualShipBoard#0" expanded="false" />
-                    <element signature="method#setShipButtonOnShipDrownInRow#0;class#VisualShipBoard#0" expanded="false" />
-                    <element signature="method#setShipButtonOnShipDrownInColumn#0;class#VisualShipBoard#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="GameWindowStyle.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/View/src/resources/style/GameWindowStyle.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="697">
-                  <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ShipBoard.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Logic/src/logic/data/ShipBoard.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="816">
-                  <caret line="186" column="62" lean-forward="false" selection-start-line="186" selection-start-column="62" selection-end-line="186" selection-end-column="62" />
-                  <folding>
-                    <element signature="method#ShipBoard#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#initShipBoard#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#initShipBoardSquares#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#setShipInboard#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#validateAndSetShipSquareInRow#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#validateAndSetShipSquareInCul#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#ensureValidLocation#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#ensureShipLocationIsNotNearOtherShip#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#ensureShiplocationIsInBoarders#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#isLocationValid#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#addMineToShipBoard#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#ensureMinePositionIsValid#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#isValidMinePosition#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#getShipBoardSquareValue#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#getShipBoardScoreValueAtPoint#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#isShipBoardSqaureGotHit#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#getShip#0;class#ShipBoard#0" expanded="false" />
-                    <element signature="method#removeMineFromBoard#0;class#ShipBoard#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ShipsBoardSquare.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Logic/src/logic/data/ShipsBoardSquare.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
-                  <caret line="73" column="70" lean-forward="false" selection-start-line="73" selection-start-column="70" selection-end-line="73" selection-end-column="70" />
-                  <folding>
-                    <element signature="method#ShipsBoardSquare#0;class#ShipsBoardSquare#0" expanded="false" />
-                    <element signature="method#setHit#0;class#ShipsBoardSquare#0" expanded="false" />
-                    <element signature="method#setShip#0;class#ShipsBoardSquare#0" expanded="false" />
-                    <element signature="e#891#971#0" expanded="false" />
-                    <element signature="method#getScoreValue#0;class#ShipsBoardSquare#0" expanded="false" />
-                    <element signature="e#1880#1881#0" expanded="true" />
-                    <element signature="e#1911#1912#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GameWindowController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/src/view/gameWindow/GameWindowController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1207">
+              <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+              <folding>
+                <element signature="method#GameWindowController#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#setData#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#setComponents#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#setMines#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#createMineButton#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#setBoards#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#getTrackBoardGridPaneButton#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#getShipBoardGridPaneButton#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#createShipStateTable#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#updatePlayerVisualShipTypeMapOnShipDrown#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#getPlayerShipStateTableView#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#setPlayerShipStateTableView#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#setEnemyShipStateTableView#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#updateEnemyVisualShipTypeMapOnEnemyShipDrown#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#onMineButtonDragDetectedEventHandler#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#onMineButtonDragOverEventHandler#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#onMineButtonDragEnteredEventHandler#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#onMineButtonDragExited#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#onMineButtonDragDropped#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#addOnMinePutListener#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#removeOnMinePutListener#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#notifyAllOnMinePutListenersOnMinePut#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#onRetreatButtonClickedEventHandler#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#addOnPlayerRetreatListener#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#removeOnPlayerRetreatListener#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#notifyAllOnPlayerRetreatListeners#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#initVisualBoards#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#updateVisualBoardsOnAttack#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#updateVisualBoardsOnBeenAttacked#0;class#GameWindowController#0" expanded="false" />
+                <element signature="method#updateVisualComponantsOnReplay#0;class#GameWindowController#0" expanded="false" />
+                <element signature="e#14055#14089#0" expanded="false" />
+                <element signature="e#14350#14408#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameEndWindowController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/View/src/view/gameEndWindow/GameEndWindowController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="44" column="65" lean-forward="false" selection-start-line="44" selection-start-column="65" selection-end-line="44" selection-end-column="65" />
+              <folding>
+                <element signature="method#set#0;class#GameEndWindowController#0" expanded="false" />
+                <element signature="method#onNextMoveButtonClicked#0;class#GameEndWindowController#0" expanded="false" />
+                <element signature="method#onPreviusMoveButtonClicked#0;class#GameEndWindowController#0" expanded="false" />
+                <element signature="method#updateVisualComponentsWithOnReplay#0;class#GameEndWindowController#0" expanded="false" />
+                <element signature="method#makeTextFromAttackResult#0;class#GameEndWindowController#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyIterator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/View/src/utills/MyIterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+              <folding>
+                <element signature="method#MyIterator#0;class#MyIterator#0" expanded="false" />
+                <element signature="method#hasNext#0;class#MyIterator#0" expanded="false" />
+                <element signature="method#hasPrevious#0;class#MyIterator#0" expanded="false" />
+                <element signature="method#next#0;class#MyIterator#0" expanded="false" />
+                <element signature="method#previous#0;class#MyIterator#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -275,8 +156,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>switchtoscene</find>
-      <find>updatePlayersStats</find>
       <find>notifyAllOnPlayerRetreatListeners</find>
       <find>playerStatsTable</find>
       <find>primaryStage</find>
@@ -305,6 +184,8 @@
       <find>attack</find>
       <find>clone</find>
       <find>shipBoardButton</find>
+      <find>move</find>
+      <find>MyIterator</find>
     </findStrings>
     <replaceStrings>
       <replace>mineButton</replace>
@@ -370,9 +251,7 @@
         <option value="$PROJECT_DIR$/View/src/model/visualTrackBoard/VisualTrackBoard.java" />
         <option value="$PROJECT_DIR$/Logic/src/logic/GameEngine.java" />
         <option value="$PROJECT_DIR$/Logic/src/logic/MoveData.java" />
-        <option value="$PROJECT_DIR$/View/src/utills/MyIterator.java" />
         <option value="$PROJECT_DIR$/View/src/utills/Utills.java" />
-        <option value="$PROJECT_DIR$/View/src/view/gameEndWindow/GameEndWindowController.java" />
         <option value="$PROJECT_DIR$/Logic/src/logic/data/TrackBoard.java" />
         <option value="$PROJECT_DIR$/Logic/src/logic/data/PlayerData.java" />
         <option value="$PROJECT_DIR$/Logic/src/logic/data/ShipBoard.java" />
@@ -380,6 +259,8 @@
         <option value="$PROJECT_DIR$/View/src/resources/style/GameWindowStyle.css" />
         <option value="$PROJECT_DIR$/View/src/model/visualShipBoard/VisualShipBoard.java" />
         <option value="$PROJECT_DIR$/View/src/view/gameWindow/GameWindowController.java" />
+        <option value="$PROJECT_DIR$/View/src/utills/MyIterator.java" />
+        <option value="$PROJECT_DIR$/View/src/view/gameEndWindow/GameEndWindowController.java" />
       </list>
     </option>
   </component>
@@ -390,7 +271,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -434,41 +315,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="BattleShipGameFX" type="58d84e3e:PackageViewProjectNode" />
-              <item name="FxUI" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="BattleShipGameFX" type="58d84e3e:PackageViewProjectNode" />
-              <item name="FxUI" type="616d4139:PackageViewModuleNode" />
-              <item name="model" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="BattleShipGameFX" type="58d84e3e:PackageViewProjectNode" />
-              <item name="FxUI" type="616d4139:PackageViewModuleNode" />
-              <item name="model" type="1f31426a:PackageElementNode" />
-              <item name="visualShipBoard" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="BattleShipGameFX" type="58d84e3e:PackageViewProjectNode" />
-              <item name="FxUI" type="616d4139:PackageViewModuleNode" />
-              <item name="resources" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="BattleShipGameFX" type="58d84e3e:PackageViewProjectNode" />
-              <item name="FxUI" type="616d4139:PackageViewModuleNode" />
-              <item name="resources" type="1f31426a:PackageElementNode" />
-              <item name="style" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -498,7 +344,47 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BattleShipGameFX" type="58d84e3e:PackageViewProjectNode" />
+              <item name="FxUI" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="BattleShipGameFX" type="58d84e3e:PackageViewProjectNode" />
+              <item name="FxUI" type="616d4139:PackageViewModuleNode" />
+              <item name="model" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="BattleShipGameFX" type="58d84e3e:PackageViewProjectNode" />
+              <item name="FxUI" type="616d4139:PackageViewModuleNode" />
+              <item name="model" type="1f31426a:PackageElementNode" />
+              <item name="visualShipBoard" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="BattleShipGameFX" type="58d84e3e:PackageViewProjectNode" />
+              <item name="FxUI" type="616d4139:PackageViewModuleNode" />
+              <item name="resources" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="BattleShipGameFX" type="58d84e3e:PackageViewProjectNode" />
+              <item name="FxUI" type="616d4139:PackageViewModuleNode" />
+              <item name="view" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="BattleShipGameFX" type="58d84e3e:PackageViewProjectNode" />
+              <item name="FxUI" type="616d4139:PackageViewModuleNode" />
+              <item name="view" type="1f31426a:PackageElementNode" />
+              <item name="gameEndWindow" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -787,6 +673,7 @@
       <workItem from="1504804554155" duration="2268000" />
       <workItem from="1504809431987" duration="4972000" />
       <workItem from="1504855366340" duration="108000" />
+      <workItem from="1504897582138" duration="4092000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1504745971329</created>
@@ -806,7 +693,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272320000" />
+    <option name="totallyTimeSpent" value="276412000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -818,11 +705,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32502708" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -839,7 +727,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36511377" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25568798" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -849,7 +737,6 @@
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32502708" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -871,7 +758,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="312" />
+      <option name="time" value="320" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1042,23 +929,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/src/view/gameWindow/GameWindow.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="52" column="120" lean-forward="false" selection-start-line="52" selection-start-column="120" selection-end-line="52" selection-end-column="120" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/src/view/gameWindow/GameWindow2.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/view/gameWindow/GameWindow2.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/src/view/mainMenu/MainMenuController.java">
@@ -1083,13 +970,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/src/view/gameEndWindow/GameEndWindow.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="50" column="119" lean-forward="false" selection-start-line="50" selection-start-column="119" selection-end-line="50" selection-end-column="119" />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logic/src/logic/data/Constants.java">
@@ -1103,7 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1129,30 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/utills/MyIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="106" lean-forward="false" selection-start-line="12" selection-start-column="106" selection-end-line="12" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/utills/Utills.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="68" column="31" lean-forward="false" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
-          <folding>
-            <element signature="method#setControlBackground#0;class#Utills#0" expanded="false" />
-            <element signature="method#bindChildSizeToParent#0;class#Utills#0" expanded="false" />
-            <element signature="method#generateSceneFromFxml#0;class#Utills#0" expanded="false" />
-            <element signature="method#convertVisualPositionToLogicPosition#0;class#Utills#0" expanded="false" />
-            <element signature="method#getNodePositionInGridPane#0;class#Utills#0" expanded="false" />
-            <element signature="method#convertVisualPositionToLogicPosition#1;class#Utills#0" expanded="false" />
-            <element signature="e#2451#2452#0" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logic/src/logic/data/enums/ShipBoardSquareValue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1164,13 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
           <caret line="95" column="51" lean-forward="false" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/logic/MoveData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="38" lean-forward="true" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1202,11 +1057,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/resources/style/GameWindowStyle.css">
+    <entry file="file://$PROJECT_DIR$/Logic/src/logic/data/ShipsBoardSquare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="612">
+          <caret line="73" column="70" lean-forward="false" selection-start-line="73" selection-start-column="70" selection-end-line="73" selection-end-column="70" />
+          <folding>
+            <element signature="method#ShipsBoardSquare#0;class#ShipsBoardSquare#0" expanded="false" />
+            <element signature="method#setHit#0;class#ShipsBoardSquare#0" expanded="false" />
+            <element signature="method#setShip#0;class#ShipsBoardSquare#0" expanded="false" />
+            <element signature="e#891#971#0" expanded="false" />
+            <element signature="method#getScoreValue#0;class#ShipsBoardSquare#0" expanded="false" />
+            <element signature="e#1880#1881#0" expanded="false" />
+            <element signature="e#1911#1912#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1237,53 +1100,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Logic/src/logic/data/ShipsBoardSquare.java">
+    <entry file="file://$PROJECT_DIR$/View/src/resources/style/GameWindowStyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="73" column="70" lean-forward="false" selection-start-line="73" selection-start-column="70" selection-end-line="73" selection-end-column="70" />
-          <folding>
-            <element signature="method#ShipsBoardSquare#0;class#ShipsBoardSquare#0" expanded="false" />
-            <element signature="method#setHit#0;class#ShipsBoardSquare#0" expanded="false" />
-            <element signature="method#setShip#0;class#ShipsBoardSquare#0" expanded="false" />
-            <element signature="e#891#971#0" expanded="false" />
-            <element signature="method#getScoreValue#0;class#ShipsBoardSquare#0" expanded="false" />
-            <element signature="e#1880#1881#0" expanded="true" />
-            <element signature="e#1911#1912#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/view/gameEndWindow/GameEndWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="60" column="79" lean-forward="false" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="79" />
-          <folding>
-            <element signature="method#set#0;class#GameEndWindowController#0" expanded="false" />
-            <element signature="method#onNextMoveButtonClicked#0;class#GameEndWindowController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/model/visualTrackBoard/VisualTrackBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="127" column="76" lean-forward="false" selection-start-line="127" selection-start-column="76" selection-end-line="127" selection-end-column="76" />
+        <state relative-caret-position="697">
+          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/View/src/view/gameWindow/GameWindowController.java">
+    <entry file="file://$PROJECT_DIR$/Logic/src/logic/MoveData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5202">
-          <caret line="349" column="0" lean-forward="false" selection-start-line="349" selection-start-column="0" selection-end-line="349" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="187">
+          <caret line="14" column="127" lean-forward="false" selection-start-line="14" selection-start-column="127" selection-end-line="14" selection-end-column="127" />
+          <folding>
+            <element signature="method#MoveData#0;class#MoveData#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/View/src/model/visualShipBoard/VisualShipBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="136" column="52" lean-forward="false" selection-start-line="136" selection-start-column="52" selection-end-line="136" selection-end-column="52" />
+        <state relative-caret-position="102">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="17" />
           <folding>
             <element signature="method#VisualShipBoard#0;class#VisualShipBoard#0" expanded="false" />
             <element signature="docComment;method#bindButtonToVisualShipBoardSqaure#0;class#VisualShipBoard#0" expanded="false" />
@@ -1294,6 +1132,100 @@
             <element signature="method#markDrownShip#0;class#VisualShipBoard#0" expanded="false" />
             <element signature="method#setShipButtonOnShipDrownInRow#0;class#VisualShipBoard#0" expanded="false" />
             <element signature="method#setShipButtonOnShipDrownInColumn#0;class#VisualShipBoard#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/src/utills/Utills.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="68" column="31" lean-forward="false" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+          <folding>
+            <element signature="method#setControlBackground#0;class#Utills#0" expanded="false" />
+            <element signature="method#bindChildSizeToParent#0;class#Utills#0" expanded="false" />
+            <element signature="method#generateSceneFromFxml#0;class#Utills#0" expanded="false" />
+            <element signature="method#convertVisualPositionToLogicPosition#0;class#Utills#0" expanded="false" />
+            <element signature="method#getNodePositionInGridPane#0;class#Utills#0" expanded="false" />
+            <element signature="method#convertVisualPositionToLogicPosition#1;class#Utills#0" expanded="false" />
+            <element signature="e#2451#2452#0" expanded="true" />
+            <element signature="e#2523#2524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/src/model/visualTrackBoard/VisualTrackBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="127" column="76" lean-forward="false" selection-start-line="127" selection-start-column="76" selection-end-line="127" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/src/view/gameWindow/GameWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="193" column="0" lean-forward="false" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+          <folding>
+            <element signature="method#GameWindowController#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#setData#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#setComponents#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#setMines#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#createMineButton#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#setBoards#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#getTrackBoardGridPaneButton#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#getShipBoardGridPaneButton#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#createShipStateTable#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#updatePlayerVisualShipTypeMapOnShipDrown#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#getPlayerShipStateTableView#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#setPlayerShipStateTableView#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#setEnemyShipStateTableView#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#updateEnemyVisualShipTypeMapOnEnemyShipDrown#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#onMineButtonDragDetectedEventHandler#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#onMineButtonDragOverEventHandler#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#onMineButtonDragEnteredEventHandler#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#onMineButtonDragExited#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#onMineButtonDragDropped#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#addOnMinePutListener#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#removeOnMinePutListener#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#notifyAllOnMinePutListenersOnMinePut#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#onRetreatButtonClickedEventHandler#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#addOnPlayerRetreatListener#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#removeOnPlayerRetreatListener#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#notifyAllOnPlayerRetreatListeners#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#initVisualBoards#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#updateVisualBoardsOnAttack#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#updateVisualBoardsOnBeenAttacked#0;class#GameWindowController#0" expanded="false" />
+            <element signature="method#updateVisualComponantsOnReplay#0;class#GameWindowController#0" expanded="false" />
+            <element signature="e#14055#14089#0" expanded="false" />
+            <element signature="e#14350#14408#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/src/view/gameEndWindow/GameEndWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="44" column="65" lean-forward="false" selection-start-line="44" selection-start-column="65" selection-end-line="44" selection-end-column="65" />
+          <folding>
+            <element signature="method#set#0;class#GameEndWindowController#0" expanded="false" />
+            <element signature="method#onNextMoveButtonClicked#0;class#GameEndWindowController#0" expanded="false" />
+            <element signature="method#onPreviusMoveButtonClicked#0;class#GameEndWindowController#0" expanded="false" />
+            <element signature="method#updateVisualComponentsWithOnReplay#0;class#GameEndWindowController#0" expanded="false" />
+            <element signature="method#makeTextFromAttackResult#0;class#GameEndWindowController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/View/src/utills/MyIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding>
+            <element signature="method#MyIterator#0;class#MyIterator#0" expanded="false" />
+            <element signature="method#hasNext#0;class#MyIterator#0" expanded="false" />
+            <element signature="method#hasPrevious#0;class#MyIterator#0" expanded="false" />
+            <element signature="method#next#0;class#MyIterator#0" expanded="false" />
+            <element signature="method#previous#0;class#MyIterator#0" expanded="false" />
           </folding>
         </state>
       </provider>
