@@ -4,7 +4,7 @@ import logic.data.enums.ShipBoardSquareValue;
 import logic.exceptions.LogicallyInvalidXmlInputException;
 import xmlInputManager.Position;
 
-public class ShipsBoardSquare {
+public class ShipsBoardSquare implements Cloneable{
     private ShipBoardSquareValue value;
     private Position position;
     private Ship anchorShip;
@@ -69,5 +69,11 @@ public class ShipsBoardSquare {
 
     public void setWater() {
         this.value = ShipBoardSquareValue.WATER;
+    }
+
+    public ShipsBoardSquare clone() throws CloneNotSupportedException {
+        ShipsBoardSquare shipsBoardSquare = (ShipsBoardSquare) super.clone();
+
+        return shipsBoardSquare;
     }
 }

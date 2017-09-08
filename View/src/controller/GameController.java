@@ -37,7 +37,7 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
     private Scene mainMenuScene; //Needed For the End of game
     private Scene[] gameScenes;
     private GameWindowController[] gameWindowControllers;
-    private static final int NUM_OF_PLAYERS = 2;
+    public static final int NUM_OF_PLAYERS = 2;
     private Stage primaryStage;
     private long turnTimerInMiliseconds; //Save the time in milliseconds when the Active user player windows has been apeared for the avg attack time calculating
 
@@ -133,6 +133,8 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
             attackResult = gameEngine.attackPosition(positionToAttack, false);
         } catch (NoShipAtPoisitionException e) {
             e.printStackTrace();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
         }
         //Check if win
         //Update visual elements with result and Check if user Win
@@ -156,7 +158,7 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
             fxmlLoader.setLocation(getClass().getResource("/view/gameEndWindow/GameEndWindow.fxml"));
             Parent root = fxmlLoader.load();
             windowController = fxmlLoader.getController();
-            windowController.set(gameWindowControllers[0], gameWindowControllers[1]);
+            windowController.set(gameWindowControllers[0], gameWindowControllers[1],gameEngine.getMoveHistory());
             scene = new Scene(root);
             switchToScene(scene, "Game End Stats");
         } catch (IOException e) {

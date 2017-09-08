@@ -3,7 +3,7 @@ package logic.data;
 import logic.data.enums.TrackBoardSquareValue;
 import xmlInputManager.Position;
 
-public class TrackBoard {
+public class TrackBoard implements Cloneable {
     private TrackBoardSquareValue[][] trackBoard;
     private final int rows, columns;
 
@@ -35,4 +35,15 @@ public class TrackBoard {
         trackBoard[position.getX()][position.getY()] = valueToMark;
     }
 
+    @Override
+    protected TrackBoard clone() throws CloneNotSupportedException {
+        TrackBoard trackBoard = (TrackBoard) super.clone();
+        trackBoard.trackBoard = new TrackBoardSquareValue[rows][columns];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                trackBoard.trackBoard[i][j] = this.trackBoard[i][j];
+            }
+        }
+        return trackBoard;
+    }
 }

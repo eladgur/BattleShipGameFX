@@ -11,7 +11,7 @@ import xmlInputManager.Position;
 
 import java.util.List;
 
-public class PlayerData {
+public class PlayerData implements Cloneable {
     private GameType gameType;
     private ShipBoard shipBoard;
     private TrackBoard trackBoard;
@@ -19,7 +19,7 @@ public class PlayerData {
     private GameInfo gameInfo;
     private List<Ship> shipList;
     private int numOfShips;
-    
+
 
     public PlayerData(GameInfo gameInfo, int playerNumber, GameType gameType) throws LogicallyInvalidXmlInputException {
         this.hits = this.misses = this.score = 0;
@@ -49,19 +49,19 @@ public class PlayerData {
         misses++;
     }
 
-    public void updateSuccessShipAttack(Position position, int scoreToAdd,boolean isShipDrown,boolean mineIsTheAttacker) {
+    public void updateSuccessShipAttack(Position position, int scoreToAdd, boolean isShipDrown, boolean mineIsTheAttacker) {
         if (!mineIsTheAttacker) {
             incHits();
         }
         markTrackBoard(position, TrackBoardSquareValue.HIT); //mark as a hit at the attacker Track board
-        addScoreByGameType(position, scoreToAdd,isShipDrown);
+        addScoreByGameType(position, scoreToAdd, isShipDrown);
     }
 
     public void markAttackedShip(Position position) { //mark the enemy ship as hitted
         shipBoard.markAttackedShipInShipBoard(position);
     }
 
-    private void addScoreByGameType(Position position, int scoreToAdd,boolean isShipDrown) {
+    private void addScoreByGameType(Position position, int scoreToAdd, boolean isShipDrown) {
         if (gameType == GameType.BASIC) {
             score += scoreToAdd;
         } else if (isShipDrown) {
@@ -137,7 +137,7 @@ public class PlayerData {
         return shipBoard.getNumOfShipSquares();
     }
 
-    public void insertMine(Position insertPosition)  {
+    public void insertMine(Position insertPosition) {
         shipBoard.addMineToShipBoard(insertPosition);
         numOfMines--;
     }
@@ -155,7 +155,7 @@ public class PlayerData {
     }
 
     public String getPlayerName() {
-        return String.valueOf(playerNumber+1);
+        return String.valueOf(playerNumber + 1);
     }
 
     public int getAvgAttackTime() {
@@ -178,5 +178,13 @@ public class PlayerData {
 
     public void decNumOfShips() {
         this.numOfShips--;
+    }
+
+    public PlayerData clone() throws CloneNotSupportedException {
+        PlayerData playerData = (PlayerData) super.clone();
+        playerData.trackBoard = (TrackBoard) this.trackBoard.clone();
+        playerData.shipBoard = (ShipBoard) this.shipBoard.clone();
+
+        return playerData;
     }
 }

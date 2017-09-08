@@ -1,5 +1,6 @@
 package utills;
 
+import controller.GameController;
 import javafx.event.EventTarget;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -62,5 +63,9 @@ public class Utills {
         Position position = new Position(visualPosition.getX()-1,visualPosition.getY()-1);
 
         return position;
+    }
+
+    public static int getOtherPlayerIndex(int playerIndex) {
+        return (playerIndex + 1) % GameController.NUM_OF_PLAYERS;
     }
 }

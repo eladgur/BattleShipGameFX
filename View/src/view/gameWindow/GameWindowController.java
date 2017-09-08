@@ -13,6 +13,7 @@ import javafx.scene.input.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
+import logic.MoveData;
 import logic.data.PlayerData;
 import logic.data.Ship;
 import logic.data.ShipBoard;
@@ -241,7 +242,7 @@ public class GameWindowController implements OnMinePutObserverable, OnPlayerRetr
             Button targetButton = (Button) event.getGestureTarget();
             int row = GridPane.getRowIndex(targetButton) -1;
             int column = GridPane.getColumnIndex(targetButton) -1;
-            this.visualShipBoard.putMine(row,column);
+            insertMine(row, column);
             targetButton.getStyleClass().add(db.getString());
             targetButton.setOnDragOver(null);
             targetButton.setOnDragEntered(null);
@@ -253,6 +254,10 @@ public class GameWindowController implements OnMinePutObserverable, OnPlayerRetr
         /* let the source know whether the string was successfully transferred and used */
         event.setDropCompleted(success);
         event.consume();
+    }
+
+    public void insertMine(int row, int column) {
+        this.visualShipBoard.putMine(row,column);
     }
 
     //OnMinePut Event
@@ -337,5 +342,13 @@ public class GameWindowController implements OnMinePutObserverable, OnPlayerRetr
             this.visualTrackBoard.updateBoardSqaureValueAtMineSide(row, column, attackResult);
             this.visualShipBoard.markMineAsExploded(row, column);
         }
+    }
+
+    public void updateVisualBoardsOnReplay(PlayerData playerData) {
+        TrackBoard trackBoard = playerData.getTrackBoard();
+        ShipBoard shipBoard = playerData.getShipBoard();
+
+        visualTrackBoard.updateOnReplay(trackBoard);
+        visualShipBoard.updateOnReplay(shipBoard);
     }
 }

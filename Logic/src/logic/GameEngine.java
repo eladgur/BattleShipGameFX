@@ -93,9 +93,6 @@ public class GameEngine implements ShipDrownListenable {
     }
 
     private void storeAttackResult(AttackResult attackResult, int playerIndex, Position position) throws CloneNotSupportedException {
-        TrackBoardSquareValue attackerTrackBoardSquareValue = playersdata[activePlayer].getTrackBoardSquareValue(position);
-        TrackBoardSquareValue attackedTrackBoardSquareValue = playersdata[otherPlayer].getTrackBoardSquareValue(position);
-
         MoveData moveDataAfterAttack = new MoveData(attackResult, false, playersdata);
 
         if (this.moveHistoryList == null) {

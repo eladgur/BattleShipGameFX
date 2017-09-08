@@ -16,6 +16,7 @@ import logic.data.Ship;
 import logic.data.TrackBoard;
 import logic.data.enums.AttackResult;
 import logic.data.enums.Direction;
+import logic.data.enums.TrackBoardSquareValue;
 import view.gameWindow.StyleClasses;
 import xmlInputManager.Position;
 
@@ -165,4 +166,25 @@ public class VisualTrackBoard implements Cloneable{
         }
     }
 
+    public void updateOnReplay(TrackBoard trackBoard) {
+        String styleClassName = "";
+        int boardSize = this.board.length;
+        for (int i = 0; i < boardSize; i++) {
+            for (int j = 0; j < boardSize; j++) {
+                Position position = new Position(i,j);
+                switch (trackBoard.getSquareValue(position)) {
+                    case HIT:
+                        styleClassName = StyleClasses.shipHitTrackButton.name();
+                        break;
+                    case MISS:
+                        styleClassName = StyleClasses.chosenTrackButton.name();
+                        break;
+                    case EMPTY:
+                        styleClassName = StyleClasses.trackBoardGridPaneButton.name();
+                        break;
+                }
+                this.board[i][j].set(styleClassName);
+            }
+        }
+    }
 }

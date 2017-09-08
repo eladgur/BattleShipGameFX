@@ -10,7 +10,7 @@ public class MyIterator<T>{
     private boolean previousWasCalled = false;
 
     public MyIterator(List<T> list) {
-        this.listIterator = list.listIterator();
+        this.listIterator = list.listIterator(list.size()); //Create Iterator point to the end of the list
     }
 
     public boolean hasNext() {

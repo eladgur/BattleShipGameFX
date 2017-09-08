@@ -24,9 +24,9 @@ public class VisualShipBoard {
     /**
      * Bind a Button Style Class to the StringProperty at Board[row][column]
      *
-     * @param row            - Button Row
-     * @param column         The Button Column
-     * @param buttonToBind   - the button to bind
+     * @param row          - Button Row
+     * @param column       The Button Column
+     * @param buttonToBind - the button to bind
      * @param styleClass
      */
     public void bindButtonToVisualShipBoardSqaure(int row, int column, Button buttonToBind, StyleClasses styleClass) {
@@ -134,7 +134,34 @@ public class VisualShipBoard {
         this.board[row][column].set(StyleClasses.mineButton.name());
     }
 
-    public void updateOnReplay(MoveData moveData) {
-
+    public void updateOnReplay(ShipBoard shipBoard) {
+        String styleClassName = "";
+        int boardSize = this.board.length;
+        for (int i = 0; i < boardSize; i++) {
+            for (int j = 0; j < boardSize; j++) {
+                Position position = new Position(i, j);
+                boolean isHitted = shipBoard.isShipBoardSqaureGotHit(position);
+                switch (shipBoard.getShipBoardSquareValue(position)) {
+                    case WATER:
+                        styleClassName = StyleClasses.shipBoardButton.name();
+                        break;
+                    case SHIP:
+                        if (isHitted) {
+                            styleClassName = StyleClasses.shipHitShipButton.name();
+                        } else {
+                            styleClassName = StyleClasses.shipBoardShipButton.name();
+                        }
+                        break;
+                    case MINE:
+                        if (isHitted) {
+                            styleClassName = StyleClasses.shipBoardHittedMineButton.name();
+                        } else {
+                            styleClassName = StyleClasses.shipBoardMineButton.name();
+                            break;
+                        }
+                }
+                this.board[i][j].set(styleClassName);
+            }
+        }
     }
 }

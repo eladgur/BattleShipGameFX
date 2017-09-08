@@ -10,7 +10,7 @@ import xmlInputManager.Position;
 
 import java.util.List;
 
-public class ShipBoard {
+public class ShipBoard implements Cloneable{
     private ShipsBoardSquare[][] board;
     private final int rows, columns;
     private int shipSquaresCounter;
@@ -202,5 +202,16 @@ public class ShipBoard {
 
     public void removeMineFromBoard(Position minePosition) {
         board[minePosition.getX()][minePosition.getY()].setWater();
+    }
+
+    protected ShipBoard clone() throws CloneNotSupportedException {
+        ShipBoard shipBoard = (ShipBoard) super.clone();
+        shipBoard.board = new ShipsBoardSquare[rows][columns];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                shipBoard.board[i][j] = this.board[i][j].clone();
+            }
+        }
+        return shipBoard;
     }
 }
