@@ -248,10 +248,6 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
         handleSceneSwitches();
     }
 
-    @Override
-    public void shipDrownEventHandler(Ship drownShip) {
-    }
-
     private void handleSceneSwitches() {
         if (needToSwitchScene()) {
             switchGameScene();
@@ -263,5 +259,13 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
         this.gameEngine.retreat();
 //        showRetreatMsg(playerName);
         onGameEndActions();
+    }
+
+    //Ship Drown Interface
+    @Override
+    public void shipDrownEventHandler(Ship drownShip) {
+        //Update shipTypeList's
+        gameWindowControllers[pasiveSceneIndex].updatePlayerVisualShipTypeMapOnShipDrown(drownShip);
+        gameWindowControllers[activeSceneIndex].updateEnemyVisualShipTypeMapOnEnemyShipDrown(drownShip);
     }
 }

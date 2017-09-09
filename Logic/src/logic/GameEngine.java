@@ -199,7 +199,7 @@ public class GameEngine implements ShipDrownListenable {
         AttackResult attackResult = AttackResult.SHIPDROWNHIT;
         attackResult.setShip(drownShip);
         playersdata[otherPlayer].decNumOfShips();
-//        notifyAllShipDrownListeners(drownShip);
+        notifyAllShipDrownListeners(drownShip);
         return attackResult;
     }
 

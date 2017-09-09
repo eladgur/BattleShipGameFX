@@ -70,11 +70,9 @@ public class ShipBoard implements Cloneable{
 
     private void validateAndSetShipSquareInRow(Ship ship, int row, int firstCul, int shipLength) throws LogicallyInvalidXmlInputException {
         for (int currentCul = firstCul; currentCul < firstCul + shipLength; currentCul++) {
-            if (!board[row][currentCul].isShip()) {
                 ensureValidLocation(row, currentCul, ship);
                 board[row][currentCul].setShip(ship);
                 shipSquaresCounter++;
-            }
         }
     }
 

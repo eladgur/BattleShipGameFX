@@ -13,7 +13,6 @@ import javafx.scene.input.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.TilePane;
 import javafx.stage.Stage;
-import logic.MoveData;
 import logic.data.PlayerData;
 import logic.data.Ship;
 import logic.data.ShipBoard;
@@ -161,6 +160,10 @@ public class GameWindowController implements OnMinePutObserverable, OnPlayerRetr
         playerShipStateTableView.getItems().removeIf(e -> e.getValue().getShipAmountProperty().get() == 0);
     }
 
+    public void updateEnemyVisualShipTypeMapOnEnemyShipDrown(Ship drownShip) {
+        enemyShipStateTableView.getItems().removeIf(e -> e.getValue().getShipAmountProperty().get() == 0);
+    }
+
     public TableView<Map.Entry<String, VisualShipType>> getPlayerShipStateTableView() {
         return playerShipStateTableView;
     }
@@ -184,10 +187,6 @@ public class GameWindowController implements OnMinePutObserverable, OnPlayerRetr
 
     public Map<String, VisualShipType> getShipStatsMap() {
         return shipStatsMap;
-    }
-
-    public void updateEnemyVisualShipTypeMapOnEnemyShipDrown(Ship drownShip) {
-        enemyShipStateTableView.getItems().removeIf(e -> e.getValue().getShipAmountProperty().get() == 0);
     }
 
     //Mine Drag & Drop EventHandler's
@@ -327,7 +326,7 @@ public class GameWindowController implements OnMinePutObserverable, OnPlayerRetr
         this.visualTrackBoard = new VisualTrackBoard(boardSize, boardSize, trackBoard);
     }
 
-    //Visual Boards
+    //Visual Boards update on attack
     public void updateVisualBoardsOnAttack(AttackResult attackResult, int row, int column) {
         this.visualTrackBoard.updateBoardSqaureValue(row, column, attackResult);
         if (attackResult.name().contains("MINE")) {
@@ -344,6 +343,7 @@ public class GameWindowController implements OnMinePutObserverable, OnPlayerRetr
         }
     }
 
+    //Visual Boards update on Replay
     public void updateVisualComponantsOnReplay(PlayerData playerData) {
         TrackBoard trackBoard = playerData.getTrackBoard();
         ShipBoard shipBoard = playerData.getShipBoard();
