@@ -36,8 +36,8 @@
         <menus>
           <Menu mnemonicParsing="false" text="Options">
             <items>
-              <MenuItem mnemonicParsing="false" text="Start New Game" />
-                  <MenuItem mnemonicParsing="false" text="Restart Game" />
+              <MenuItem mnemonicParsing="false" onAction="#onStartNewGameMenuItemClickedEventHandler" text="Start New Game" />
+                  <MenuItem mnemonicParsing="false" onAction="#onRestartGameMenuItemClickedEventHandler" text="Restart Game" />
             </items>
           </Menu>
         </menus>

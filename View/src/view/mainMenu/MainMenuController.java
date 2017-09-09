@@ -14,9 +14,10 @@ import javafx.stage.FileChooser;
 import main.Main;
 import view.gameWindow.LoadGameTask;
 
+import java.awt.*;
 import java.io.File;
 
-public class MainMenuController {
+public class MainMenuController implements onRestartGameListener {
     private Main main;
     private GameController gameController;
     private LoadGameTask loadGameTask;
@@ -33,7 +34,7 @@ public class MainMenuController {
 
     private void setLoadGameTask() {
         //Create the Task
-        this.loadGameTask = new LoadGameTask(this.main);
+        this.loadGameTask = new LoadGameTask(this.main,this);
         //Set File to load from at the task
         loadGameTask.setFileToLoadFrom(this.file);
         //Bind ProgressBar
@@ -98,5 +99,21 @@ public class MainMenuController {
 
         //Show Error Alert Message
         new Alert(Alert.AlertType.ERROR, exception.getMessage()).showAndWait();
+    }
+
+    @Override
+    public void onRestartGameEventHandler() {
+        //Create the Task
+        this.loadGameTask = new LoadGameTask(this.main, this);
+        //Set File to load from at the task
+        loadGameTask.setFileToLoadFrom(this.file);
+        Thread thread = new Thread(loadGameTask);
+        thread.start();
+        try {
+            thread.join();
+            startGameButtonClickHandler(new ActionEvent());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

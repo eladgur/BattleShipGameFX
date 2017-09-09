@@ -1,5 +1,6 @@
 package view.gameEndWindow;
 
+import controller.GameController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -11,7 +12,6 @@ import utills.MyIterator;
 import utills.Utills;
 import view.gameWindow.GameWindowController;
 
-import javax.script.Bindings;
 import java.util.List;
 
 public class GameEndWindowController {
@@ -19,14 +19,17 @@ public class GameEndWindowController {
     @FXML Label attackResultLabel;
     @FXML Button previousMoveButton;
     @FXML Button nextMoveButton;
+    private GameController gameController;
     private GameWindowController[] gameWindowControllers;
     private List<MoveData> movesHistoryList;
     private MyIterator<MoveData> moveIterator;
 
-    public void set(GameWindowController gameWindowController1, GameWindowController gameWindowController2, List<MoveData> movesHistoryList) {
+    public void set(GameWindowController gameWindowController1, GameWindowController gameWindowController2, List<MoveData> movesHistoryList,GameController gameController) {
         //Set Stats Grid panes
         this.layoutGridPane.add(gameWindowController1.getGameStatsGridPane(), 0, 0);
         this.layoutGridPane.add(gameWindowController2.getGameStatsGridPane(), 1, 0);
+        //Set game controller
+        this.gameController = gameController;
         //Store GameWindowControllers
         this.gameWindowControllers = new GameWindowController[2];
         this.gameWindowControllers[0] = gameWindowController1;
@@ -113,5 +116,13 @@ public class GameEndWindowController {
         }
 
         return text;
+    }
+
+    public void onStartNewGameMenuItemClickedEventHandler(ActionEvent actionEvent) {
+        this.gameController.startNewGame();
+    }
+
+    public void onRestartGameMenuItemClickedEventHandler(ActionEvent actionEvent) {
+        this.gameController.restartGame();
     }
 }

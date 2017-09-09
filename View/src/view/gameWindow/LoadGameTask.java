@@ -5,6 +5,7 @@ import javafx.concurrent.Task;
 import logic.GameEngine;
 import logic.exceptions.LogicallyInvalidXmlInputException;
 import main.Main;
+import view.mainMenu.MainMenuController;
 import xmlInputManager.GameInfo;
 import xmlInputManager.InvalidXmFormatException;
 import xmlInputManager.XmlReader;
@@ -19,9 +20,11 @@ public class LoadGameTask extends Task<Boolean> {
     private int boardSize;
     private File fileToLoadFrom;
     private GameController gameController;
+    private MainMenuController mainMenuController;
 
-    public LoadGameTask(Main main) {
+    public LoadGameTask(Main main,MainMenuController mainMenuController) {
         this.main = main;
+        this.mainMenuController = mainMenuController;
     }
 
     @Override
@@ -33,6 +36,7 @@ public class LoadGameTask extends Task<Boolean> {
         isValid = true;
         updateProgressWithSleep(0.5);
         this.gameController = new GameController(this.gameEngine, main.getPrimaryStage(), this.gameInfo);
+        this.gameController.addOnRestartGameEventListener(this.mainMenuController);
         succeeded();
         updateProgressWithSleep(1);
 

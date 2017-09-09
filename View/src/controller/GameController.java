@@ -1,6 +1,7 @@
 package controller;
 
 import javafx.animation.FadeTransition;
+import javafx.beans.InvalidationListener;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -23,15 +24,19 @@ import view.gameEndWindow.GameEndWindowController;
 import view.gameWindow.GameWindowController;
 import view.gameWindow.OnMinePutObserver;
 import view.gameWindow.OnPlayerRetreatObserver;
+import view.mainMenu.MainMenuController;
+import view.mainMenu.onRestartGameListener;
 import xmlInputManager.GameInfo;
 import xmlInputManager.Position;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.LinkedList;
+import java.util.List;
 
 import static utills.Utills.*;
 
-public class GameController implements ShipDrownListener, OnMinePutObserver, OnPlayerRetreatObserver {
+public class GameController implements ShipDrownListener, OnMinePutObserver, OnPlayerRetreatObserver, onRestartGameEventListenable {
     private final GameInfo gameInfo;
     private GameEngine gameEngine;
     private int boardSize, activeSceneIndex = 0, pasiveSceneIndex = 1;
@@ -41,6 +46,7 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
     public static final int NUM_OF_PLAYERS = 2;
     private Stage primaryStage;
     private long turnTimerInMiliseconds; //Save the time in milliseconds when the Active user player windows has been apeared for the avg attack time calculating
+    private List<onRestartGameListener> onRestartGameListeners;
 
     public GameController(GameEngine gameEngine, Stage primaryStage, GameInfo gameInfo) {
         //Set Game Info and set
@@ -107,7 +113,7 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
     }
 
     public void startGame() {
-        switchToScene(gameScenes[activeSceneIndex], "Player" + (activeSceneIndex + 1));
+        switchToScene(gameScenes[activeSceneIndex], ScenesNames.GAMEWINDOW.value() + (activeSceneIndex + 1));
         setTurnTimerToCurrentTime();
     }
 
@@ -148,7 +154,6 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
     private void onGameEndActions() {
         showGameWinMsg();
         switchToGameWinScene();
-//        switchToScene(mainMenuScene);
     }
 
     private void switchToGameWinScene() {
@@ -159,9 +164,9 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
             fxmlLoader.setLocation(getClass().getResource("/view/gameEndWindow/GameEndWindow.fxml"));
             Parent root = fxmlLoader.load();
             windowController = fxmlLoader.getController();
-            windowController.set(gameWindowControllers[0], gameWindowControllers[1], gameEngine.getMoveHistory());
+            windowController.set(gameWindowControllers[0], gameWindowControllers[1], gameEngine.getMoveHistory(), this);
             scene = new Scene(root);
-            switchToScene(scene, "Game End Stats");
+            switchToScene(scene, ScenesNames.GAMEENDWINDOW.value());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -210,7 +215,7 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
     private void fadeInScene(Scene sceneToPut, double lastSceneHeight, double lastSceneWidth) {
         sceneToPut.getRoot().setOpacity(0);
 
-        switchToScene(sceneToPut, "Player" + (activeSceneIndex + 1));
+        switchToScene(sceneToPut, ScenesNames.GAMEWINDOW.value() + (activeSceneIndex + 1));
 //        this.primaryStage.setScene(sceneToPut);
         //Maintain last scene size
         primaryStage.setHeight(lastSceneHeight);
@@ -269,5 +274,36 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
         //Update shipTypeList's
         gameWindowControllers[shipOwnerIndex].updatePlayerVisualShipTypeMapOnShipDrown(drownShip);
         gameWindowControllers[otherPlayerIndex].updateEnemyVisualShipTypeMapOnEnemyShipDrown(drownShip);
+    }
+
+    public void startNewGame() {
+        switchToScene(mainMenuScene,ScenesNames.MAINMENU.value());
+    }
+
+    public void restartGame() {
+        notifyAllOnRestartGameEventListeners();
+    }
+
+    //On restart
+    @Override
+    public void notifyAllOnRestartGameEventListeners() {
+        if (onRestartGameListeners != null) {
+            onRestartGameListeners.forEach(listener -> listener.onRestartGameEventHandler());
+        }
+    }
+
+    @Override
+    public void addOnRestartGameEventListener(onRestartGameListener listener) {
+        if (onRestartGameListeners == null) {
+            onRestartGameListeners = new LinkedList<>();
+        }
+        onRestartGameListeners.add(listener);
+    }
+
+    @Override
+    public void removeOnRestartGameEventListener(onRestartGameListener listener) {
+        if (onRestartGameListeners != null) {
+            onRestartGameListeners.remove(listener);
+        }
     }
 }
