@@ -12,7 +12,7 @@ public class MoveData {
     private AttackResult attackResult;
     private boolean insertMine;
 
-    public MoveData(AttackResult attackResult, boolean insertMine, PlayerData[] playersData) throws CloneNotSupportedException {
+    public MoveData(AttackResult attackResult, boolean insertMine, PlayerData[] playersData, int playerIndex) throws CloneNotSupportedException {
         this.playerIndex = playerIndex;
         this.attackResult = attackResult;
         this.insertMine = insertMine;

@@ -57,6 +57,7 @@ public class GameEndWindowController {
     }
 
     private void updateVisualComponentsWithOnReplay(MoveData moveData) {
+        //playerIndex - The index of the player who did the move
         int playerIndex = moveData.getPlayerIndex();
         int otherPlayerIndex = Utills.getOtherPlayerIndex(playerIndex);
         AttackResult attackResult = moveData.getAttackResult();
@@ -66,6 +67,10 @@ public class GameEndWindowController {
         //Update Boards
         this.gameWindowControllers[playerIndex].updateVisualComponantsOnReplay(moveData.getPlayerData(playerIndex));
         this.gameWindowControllers[otherPlayerIndex].updateVisualComponantsOnReplay(moveData.getPlayerData(otherPlayerIndex));
+        //Mark Player Name
+        this.gameWindowControllers[playerIndex].markPlayerOnReplay();
+        //Unmark other Player Name
+        this.gameWindowControllers[otherPlayerIndex].unMarkPlayerOnReplay();
     }
 
     private String makeTextFromAttackResult(AttackResult attackResult) {

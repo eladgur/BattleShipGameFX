@@ -239,8 +239,8 @@ public class GameWindowController implements OnMinePutObserverable, OnPlayerRetr
         boolean success = false;
         if (db.hasString() && db.getString().equalsIgnoreCase(StyleClasses.mineButton.name())) {
             Button targetButton = (Button) event.getGestureTarget();
-            int row = GridPane.getRowIndex(targetButton) -1;
-            int column = GridPane.getColumnIndex(targetButton) -1;
+            int row = GridPane.getRowIndex(targetButton) - 1;
+            int column = GridPane.getColumnIndex(targetButton) - 1;
             insertMine(row, column);
             targetButton.getStyleClass().add(db.getString());
             targetButton.setOnDragOver(null);
@@ -256,7 +256,7 @@ public class GameWindowController implements OnMinePutObserverable, OnPlayerRetr
     }
 
     public void insertMine(int row, int column) {
-        this.visualShipBoard.putMine(row,column);
+        this.visualShipBoard.putMine(row, column);
     }
 
     //OnMinePut Event
@@ -356,8 +356,15 @@ public class GameWindowController implements OnMinePutObserverable, OnPlayerRetr
         this.updatePlayerStats(playerData);
     }
 
-//    private void markPlayerOnReplay(String playerName) {
-//        if (playerName ==) {
-//        }
-//    }
+    public void markPlayerOnReplay() {
+        playerNameLabel.getStyleClass().remove("unMarkedPlayerNameLabel");
+        playerNameLabel.getStyleClass().add("markedPlayerNameLabel");
+    }
+
+    public void unMarkPlayerOnReplay() {
+        playerNameLabel.getStyleClass().remove("markedPlayerNameLabel");
+        playerNameLabel.getStyleClass().add("unMarkedPlayerNameLabel");
+    }
+
+
 }

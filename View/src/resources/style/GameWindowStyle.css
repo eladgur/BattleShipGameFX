@@ -72,3 +72,11 @@
 #retreatButton{-fx-background-color: orangered;}
 
 #retreatButton:hover{-fx-background-color: lawngreen;}
+
+.markedPlayerNameLabel{
+    -fx-text-fill: limegreen;
+}
+
+.unMarkedPlayerNameLabel{
+    -fx-text-fill: black;
+}

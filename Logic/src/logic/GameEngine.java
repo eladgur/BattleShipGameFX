@@ -87,13 +87,13 @@ public class GameEngine implements ShipDrownListenable {
             attackResult = REPEATEDHIT;
         }
 
-        storeMove(attackResult, playerIndex, positionToAttack);
+        storeMove(attackResult, playerIndex);
 
         return attackResult;
     }
 
-    private void storeMove(AttackResult attackResult, int playerIndex, Position position) throws CloneNotSupportedException {
-        MoveData moveDataAfterAttack = new MoveData(attackResult, false, playersdata);
+    private void storeMove(AttackResult attackResult, int playerIndex) throws CloneNotSupportedException {
+        MoveData moveDataAfterAttack = new MoveData(attackResult, false, playersdata,playerIndex);
 
         if (this.moveHistoryList == null) {
             this.moveHistoryList = new LinkedList<>();
@@ -300,7 +300,7 @@ public class GameEngine implements ShipDrownListenable {
     public void insertMine(Position insertPosition) {
         playersdata[activePlayer].insertMine(insertPosition);
         try {
-            storeMove(AttackResult.INSERTMINE,activePlayer,insertPosition);
+            storeMove(AttackResult.INSERTMINE,activePlayer);
         } catch (CloneNotSupportedException e) {e.printStackTrace();}
         swapActivePlayer();
     }
