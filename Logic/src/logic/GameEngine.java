@@ -127,7 +127,7 @@ public class GameEngine implements ShipDrownListenable {
         isShipDrown = playersdata[otherPlayer].isShipDrown(position);
         playersdata[activePlayer].updateSuccessShipAttack(position, scoreToAdd, isShipDrown, false); //update hits, TrackBoard, score
         if (isShipDrown) {
-            attackResult = shipDrownActions(position);
+            attackResult = shipDrownActions(position, otherPlayer);
         } else {
             attackResult = AttackResult.SHIPHIT;
         }
@@ -159,6 +159,7 @@ public class GameEngine implements ShipDrownListenable {
                         Ship drownShip = playersdata[activePlayer].getship(minePosition);
                         playersdata[activePlayer].decNumOfShips();
                         attackResult.setShip(drownShip);
+                        shipDrownActions(minePosition,activePlayer);
                     } else {
                         attackResult = MINESHIP;
                     }
@@ -194,17 +195,17 @@ public class GameEngine implements ShipDrownListenable {
         return playersdata[otherPlayer].getNumOfShips() <= 0;
     }
 
-    private AttackResult shipDrownActions(Position position) throws NoShipAtPoisitionException {
-        Ship drownShip = getShip(position);
+    private AttackResult shipDrownActions(Position position, int shipOwnerIndex) throws NoShipAtPoisitionException {
+        Ship drownShip = getShip(position,shipOwnerIndex);
         AttackResult attackResult = AttackResult.SHIPDROWNHIT;
         attackResult.setShip(drownShip);
         playersdata[otherPlayer].decNumOfShips();
-        notifyAllShipDrownListeners(drownShip);
+        notifyAllShipDrownListeners(drownShip, shipOwnerIndex);
         return attackResult;
     }
 
-    private Ship getShip(Position position) throws NoShipAtPoisitionException {
-        Ship ship = playersdata[otherPlayer].getship(position);
+    private Ship getShip(Position position, int shipOwnerIndex) throws NoShipAtPoisitionException {
+        Ship ship = playersdata[shipOwnerIndex].getship(position);
 
         return ship;
     }
@@ -255,10 +256,10 @@ public class GameEngine implements ShipDrownListenable {
     }
 
     @Override
-    public void notifyAllShipDrownListeners(Ship drownShip) {
+    public void notifyAllShipDrownListeners(Ship drownShip, int shipOwnerIndex) {
         if (shipDrownListeners != null) {
             for (ShipDrownListener shipDrownListener : shipDrownListeners) {
-                shipDrownListener.shipDrownEventHandler(drownShip);
+                shipDrownListener.shipDrownEventHandler(drownShip, shipOwnerIndex);
             }
         }
     }

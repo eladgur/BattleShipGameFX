@@ -18,6 +18,7 @@ import logic.ShipDrownListener;
 import logic.data.Ship;
 import logic.data.enums.AttackResult;
 import logic.exceptions.NoShipAtPoisitionException;
+import utills.Utills;
 import view.gameEndWindow.GameEndWindowController;
 import view.gameWindow.GameWindowController;
 import view.gameWindow.OnMinePutObserver;
@@ -263,9 +264,10 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
 
     //Ship Drown Interface
     @Override
-    public void shipDrownEventHandler(Ship drownShip) {
+    public void shipDrownEventHandler(Ship drownShip, int shipOwnerIndex) {
+        int otherPlayerIndex = Utills.getOtherPlayerIndex(shipOwnerIndex);
         //Update shipTypeList's
-        gameWindowControllers[pasiveSceneIndex].updatePlayerVisualShipTypeMapOnShipDrown(drownShip);
-        gameWindowControllers[activeSceneIndex].updateEnemyVisualShipTypeMapOnEnemyShipDrown(drownShip);
+        gameWindowControllers[shipOwnerIndex].updatePlayerVisualShipTypeMapOnShipDrown(drownShip);
+        gameWindowControllers[otherPlayerIndex].updateEnemyVisualShipTypeMapOnEnemyShipDrown(drownShip);
     }
 }
