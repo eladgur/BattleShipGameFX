@@ -6,12 +6,14 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.SnapshotParameters;
 import javafx.scene.control.*;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.TilePane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import logic.data.PlayerData;
 import logic.data.Ship;
@@ -22,9 +24,14 @@ import model.PlayerStats;
 import model.VisualShipType;
 import model.visualShipBoard.VisualShipBoard;
 import model.visualTrackBoard.VisualTrackBoard;
+import utills.Utills;
 import xmlInputManager.GameInfo;
 import xmlInputManager.Position;
 
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.*;
 
 import static utills.GridPaneUtills.setShipBoardGridPane;
@@ -365,6 +372,15 @@ public class GameWindowController implements OnMinePutObserverable, OnPlayerRetr
         playerNameLabel.getStyleClass().remove("markedPlayerNameLabel");
         playerNameLabel.getStyleClass().add("unMarkedPlayerNameLabel");
     }
-
-
+    
+    public void onGameInstuctionsMenuItemClicked(ActionEvent actionEvent) {
+        try {
+            URL fxmlLocation = this.getClass().getResource("/view/gameWindow/GameInstructions.fxml");
+            Scene scene = Utills.generateSceneFromFxml(fxmlLocation); //TODO: check
+            Stage instructionsWIndow = new Stage();
+            instructionsWIndow.setScene(scene);
+            instructionsWIndow.initModality(Modality.APPLICATION_MODAL);
+            instructionsWIndow.showAndWait();
+        } catch (IOException e) {e.printStackTrace();}
+    }
 }

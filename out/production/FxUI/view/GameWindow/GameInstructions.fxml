@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.gameWindow.GameInstructions">
+   <children>
+      <VBox alignment="CENTER" spacing="5.0">
+         <children>
+            <Label text="Game Instructions" />
+            <VBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TrackBoard - Use this board to choose a position that you would like to attack" />
+                  <Text layoutX="104.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ShipBoard - Use this board to see your ships stats, and drop mine to it" />
+                  <Text layoutX="124.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mines - Drag &amp; Drop the red mines above the board to one of the chooseable square at the Ship Board (Visual guidance will be apeared)" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

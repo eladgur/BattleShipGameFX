@@ -45,6 +45,17 @@ public class Utills {
         return scene;
     }
 
+    public static Scene generateSceneFromFxml(URL fxmlLocation) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader();
+        Scene scene;
+
+        fxmlLoader.setLocation(fxmlLocation);
+        Parent root = fxmlLoader.load();
+        scene = new Scene(root);
+
+        return scene;
+    }
+
     public static Position convertVisualPositionToLogicPosition(int row, int column) {
         final byte DIFFERNCE = -1;
         Position position = new Position(row + DIFFERNCE, column + DIFFERNCE);
