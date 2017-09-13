@@ -143,11 +143,49 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
             } catch (CloneNotSupportedException e) {
                 e.printStackTrace();
             }
+            //Play Sound
+            playSound(attackResult);
             //Update visual elements with result and Check if user Win
             updateVisualElementsDueToAttackResult(attackResult, row - 1, column - 1);
             //Switch scenes
             handleSceneSwitches();
             setTurnTimerToCurrentTime();
+        }
+    }
+
+    private void playSound(AttackResult attackResult) {
+        String soundsFilePath = "";
+        boolean needToPlaySound = false;
+
+        switch (attackResult){
+            case SHIPHIT:
+                soundsFilePath = getClass().getResource("/resources/sounds/boom.aiff").toString();
+                needToPlaySound = true;
+                break;
+            case SHIPDROWNHIT:
+                soundsFilePath = getClass().getResource("/resources/sounds/boom.aiff").toString();
+                needToPlaySound = true;
+                break;
+            case REPEATEDHIT:
+                break;
+            case MISSHIT:
+                break;
+            case MINESHIP:
+                break;
+            case MINEDROWNSHIP:
+                break;
+            case MINEWATER:
+                break;
+            case MINEMINE:
+                break;
+            case MINEREAPETEDHIT:
+                break;
+            case INSERTMINE:
+                break;
+        }
+
+        if (needToPlaySound) {
+            Utills.playSound(soundsFilePath);
         }
     }
 

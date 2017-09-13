@@ -10,8 +10,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Control;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import xmlInputManager.Position;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
@@ -60,23 +63,33 @@ public class Utills {
         final byte DIFFERNCE = -1;
         Position position = new Position(row + DIFFERNCE, column + DIFFERNCE);
 
-        return  position;
+        return position;
     }
 
     public static Position getNodePositionInGridPane(Node node) {
         int row = GridPane.getRowIndex(node);
         int column = GridPane.getColumnIndex(node);
 
-        return new Position(row,column);
+        return new Position(row, column);
     }
 
     public static Position convertVisualPositionToLogicPosition(Position visualPosition) {
-        Position position = new Position(visualPosition.getX()-1,visualPosition.getY()-1);
+        Position position = new Position(visualPosition.getX() - 1, visualPosition.getY() - 1);
 
         return position;
     }
 
     public static int getOtherPlayerIndex(int playerIndex) {
         return (playerIndex + 1) % GameController.NUM_OF_PLAYERS;
+    }
+
+    public static void playSound(String soundFilePath) {
+        try {
+            Media sound = new Media(soundFilePath);
+            MediaPlayer mediaPlayer = new MediaPlayer(sound);
+            mediaPlayer.play();
+        } catch (Exception e) {
+            System.out.println("Error with PlaySounds");
+        }
     }
 }
