@@ -1,0 +1,12 @@
+.button{
+    -fx-min-width: 50px;
+    -fx-opacity: 1;
+}
+#gameInstructionsHeadLine{
+    -fx-font-size: 120%;
+    -fx-font-weight: bold;
+}
+
+.instructionText{
+    -fx-font-family: serif;
+}

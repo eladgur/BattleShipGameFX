@@ -372,7 +372,7 @@ public class GameWindowController implements OnMinePutObserverable, OnPlayerRetr
         playerNameLabel.getStyleClass().remove("markedPlayerNameLabel");
         playerNameLabel.getStyleClass().add("unMarkedPlayerNameLabel");
     }
-    
+
     public void onGameInstuctionsMenuItemClicked(ActionEvent actionEvent) {
         try {
             URL fxmlLocation = this.getClass().getResource("/view/gameWindow/GameInstructions.fxml");
