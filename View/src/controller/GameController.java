@@ -157,7 +157,7 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
         String soundsFilePath = "";
         boolean needToPlaySound = false;
 
-        switch (attackResult){
+        switch (attackResult) {
             case SHIPHIT:
                 soundsFilePath = getClass().getResource("/resources/sounds/boom.aiff").toString();
                 needToPlaySound = true;
@@ -171,16 +171,28 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
             case MISSHIT:
                 break;
             case MINESHIP:
+                soundsFilePath = getClass().getResource("/resources/sounds/boom.aiff").toString();
+                needToPlaySound = true;
                 break;
             case MINEDROWNSHIP:
+                soundsFilePath = getClass().getResource("/resources/sounds/boom.aiff").toString();
+                needToPlaySound = true;
                 break;
             case MINEWATER:
+                soundsFilePath = getClass().getResource("/resources/sounds/boom.aiff").toString();
+                needToPlaySound = true;
                 break;
             case MINEMINE:
+                soundsFilePath = getClass().getResource("/resources/sounds/boom.aiff").toString();
+                needToPlaySound = true;
                 break;
             case MINEREAPETEDHIT:
+                soundsFilePath = getClass().getResource("/resources/sounds/boom.aiff").toString();
+                needToPlaySound = true;
                 break;
             case INSERTMINE:
+                soundsFilePath = getClass().getResource("/resources/sounds/boom.aiff").toString();
+                needToPlaySound = true;
                 break;
         }
 
