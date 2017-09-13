@@ -38,6 +38,10 @@ public class MainMenuController implements onRestartGameListener {
         //Set File to load from at the task
         loadGameTask.setFileToLoadFrom(this.file);
         //Bind ProgressBar
+        //Visible Binding
+        this.progressBar.visibleProperty().bind(loadGameTask.runningProperty());
+        this.progressIndicator.visibleProperty().bind(loadGameTask.runningProperty());
+        //Progress Binding
         this.progressBar.progressProperty().bind(loadGameTask.progressProperty());
         progressIndicator.progressProperty().bind(loadGameTask.progressProperty());
         //Bind Start Button
@@ -54,8 +58,8 @@ public class MainMenuController implements onRestartGameListener {
     @FXML
     public void loadGameButtonClickHandler() {
         //Show progressItems
-        this.progressBar.setOpacity(0.8);
-        this.progressIndicator.setOpacity(0.8);
+//        this.progressBar.setOpacity(1);
+        this.progressIndicator.setOpacity(1);
         //Call load Game from user actions
         loadGameXmlFileFromUser();
     }

@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.text.TextFlow?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.gameWindow.GameInstructions">
+<BorderPane style="-fx-background-color: lightGreen;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.gameWindow.GameInstructions">
     <stylesheets>
         <URL value="@../../resources/style/GameInstructionsStyleSheet.css" />
         <URL value="@../../resources/style/GameWindowStyle.css" />
@@ -96,20 +96,20 @@
    <top>
       <VBox alignment="TOP_CENTER" spacing="5.0" BorderPane.alignment="CENTER">
          <children>
-            <Label styleClass="gameInstructionsHeadLine" text="Game Instructions" />
+            <Label id="gameInstructionsHeadLine" styleClass="gameInstructionsHeadLine" text="Game Instructions" />
             <TextFlow textAlignment="CENTER">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="TrackBoard - Use this board to choose a position that you would like to attack " />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="instructionText" text="TrackBoard - Use this board to choose a position that you would like to attack " />
                </children>
             </TextFlow>
             <TextFlow textAlignment="CENTER">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ShipBoard - Use this board to see your ships stats, and drop mine to it" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="instructionText" text="ShipBoard - Use this board to see your ships stats, and drop mine to it" />
                </children>
             </TextFlow>
             <TextFlow textAlignment="CENTER">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mines - Drag &amp; Drop the red mines above the board to one of the chooseable square at the Ship Board (Visual guidance will be apeared)" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="instructionText" text="Mines - Drag &amp; Drop the red mines above the board to one of the chooseable square at the Ship Board (Visual guidance will be apeared)" />
                </children>
             </TextFlow>
          </children>
