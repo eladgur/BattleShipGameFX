@@ -54,8 +54,12 @@
     -fx-background-image: url("/resources/images/mine.png");
 }
 
-#shipBoardGridPane, #trackBoardGridPane {
+#shipBoardGridPane1, #trackBoardGridPane1 {
     -fx-background-color: deepskyblue;
+}
+
+#shipBoardGridPane2, #trackBoardGridPane2 {
+    -fx-background-color: lime;
 }
 
 .shipDrownShipButton {

@@ -112,7 +112,7 @@
                   <content>
                         <ScrollPane fitToHeight="true" fitToWidth="true">
                           <content>
-                              <GridPane id="trackBoardGridPane" fx:id="trackBoardGridPane" alignment="CENTER" gridLinesVisible="true" styleClass="BoardGridPane">
+                              <GridPane id="trackBoardGridPane1" fx:id="trackBoardGridPane" alignment="CENTER" gridLinesVisible="true" styleClass="BoardGridPane">
                                  <children>
                            </children>
                               </GridPane>
@@ -124,7 +124,7 @@
                   <content>
                         <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="171.0" prefWidth="450.0">
                            <content>
-                              <GridPane id="shipBoardGridPane" fx:id="shipBoardGridPane" alignment="CENTER" gridLinesVisible="true" styleClass="BoardGridPane">
+                              <GridPane id="shipBoardGridPane1" fx:id="shipBoardGridPane" alignment="CENTER" gridLinesVisible="true" styleClass="BoardGridPane">
                         </GridPane>
                            </content>
                         </ScrollPane>

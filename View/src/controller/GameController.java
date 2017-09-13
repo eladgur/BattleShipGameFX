@@ -1,7 +1,6 @@
 package controller;
 
 import javafx.animation.FadeTransition;
-import javafx.beans.InvalidationListener;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -24,7 +23,6 @@ import view.gameEndWindow.GameEndWindowController;
 import view.gameWindow.GameWindowController;
 import view.gameWindow.OnMinePutObserver;
 import view.gameWindow.OnPlayerRetreatObserver;
-import view.mainMenu.MainMenuController;
 import view.mainMenu.onRestartGameListener;
 import xmlInputManager.GameInfo;
 import xmlInputManager.Position;
@@ -47,6 +45,7 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
     private Stage primaryStage;
     private long turnTimerInMiliseconds; //Save the time in milliseconds when the Active user player windows has been apeared for the avg attack time calculating
     private List<onRestartGameListener> onRestartGameListeners;
+    private boolean animationIsOn;
 
     public GameController(GameEngine gameEngine, Stage primaryStage, GameInfo gameInfo) {
         //Set Game Info and set
@@ -126,29 +125,30 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
         int column, row;
         Button clickedButton = (Button) actionEvent.getSource();
 
-        //Disabled the button + Mark as Chosen
-        clickedButton.setDisable(true);
-        //Store attack time in seconds and reset timer
-        storeAttackTime();
-        //Attack the desired position
-        column = GridPane.getColumnIndex(clickedButton);
-        row = GridPane.getRowIndex(clickedButton);
-        Position positionToAttack = convertVisualPositionToLogicPosition(row, column);
-        //Check attack result
-        AttackResult attackResult = null;
-        try {
-            attackResult = gameEngine.attackPosition(positionToAttack, false);
-        } catch (NoShipAtPoisitionException e) {
-            e.printStackTrace();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
+        if (!this.animationIsOn) { //Wait untill Animation is over (If Needed)
+            //Disabled the button + Mark as Chosen
+            clickedButton.setDisable(true);
+            //Store attack time in seconds and reset timer
+            storeAttackTime();
+            //Attack the desired position
+            column = GridPane.getColumnIndex(clickedButton);
+            row = GridPane.getRowIndex(clickedButton);
+            Position positionToAttack = convertVisualPositionToLogicPosition(row, column);
+            //Check attack result
+            AttackResult attackResult = null;
+            try {
+                attackResult = gameEngine.attackPosition(positionToAttack, false);
+            } catch (NoShipAtPoisitionException e) {
+                e.printStackTrace();
+            } catch (CloneNotSupportedException e) {
+                e.printStackTrace();
+            }
+            //Update visual elements with result and Check if user Win
+            updateVisualElementsDueToAttackResult(attackResult, row - 1, column - 1);
+            //Switch scenes
+            handleSceneSwitches();
+            setTurnTimerToCurrentTime();
         }
-        //Check if win
-        //Update visual elements with result and Check if user Win
-        updateVisualElementsDueToAttackResult(attackResult, row - 1, column - 1);
-        //Switch scenes
-        handleSceneSwitches();
-        setTurnTimerToCurrentTime();
     }
 
     private void onGameEndActions() {
@@ -204,6 +204,8 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
     }
 
     private void fadeOutScene(Scene sceneToFadeInAfter, double lastSceneHeight, double lastSceneWidth) {
+        this.animationIsOn = true;
+
         FadeTransition ft = new FadeTransition(Duration.millis(1000), this.primaryStage.getScene().getRoot());
         ft.setFromValue(1.0);
         ft.setToValue(0.0);
@@ -216,14 +218,15 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
         sceneToPut.getRoot().setOpacity(0);
 
         switchToScene(sceneToPut, ScenesNames.GAMEWINDOW.value() + (activeSceneIndex + 1));
-//        this.primaryStage.setScene(sceneToPut);
         //Maintain last scene size
         primaryStage.setHeight(lastSceneHeight);
         primaryStage.setWidth(lastSceneWidth);
+        //Set Fade-In Animation
         FadeTransition ft = new FadeTransition(Duration.millis(1000), sceneToPut.getRoot());
         ft.setFromValue(0.0);
         ft.setToValue(1.0);
         ft.play();
+        ft.setOnFinished(event -> this.animationIsOn = false);
     }
 
     private void storeAttackTime() {
@@ -277,7 +280,7 @@ public class GameController implements ShipDrownListener, OnMinePutObserver, OnP
     }
 
     public void startNewGame() {
-        switchToScene(mainMenuScene,ScenesNames.MAINMENU.value());
+        switchToScene(mainMenuScene, ScenesNames.MAINMENU.value());
     }
 
     public void restartGame() {
