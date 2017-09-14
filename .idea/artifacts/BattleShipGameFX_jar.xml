@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BattleShipGameFX:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/BattleShipGameFX_jar</output-path>
+    <root id="archive" name="BattleShipGameFX.jar">
+      <element id="module-output" name="FxUI" />
+      <element id="module-output" name="Logic" />
+      <element id="module-output" name="XmlInput" />
+    </root>
+  </artifact>
+</component>
